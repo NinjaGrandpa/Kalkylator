@@ -21,27 +21,27 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBlock Name="NumpadText" Background="White" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Grid.ColumnSpan="4" FontSize="30" FontFamily="arial" Margin="10" Text="Numpad"/>
+        <TextBlock Name="NumpadText" Background="White" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Grid.ColumnSpan="4" FontSize="30" FontFamily="arial" Margin="10"/>
         <Button Name="ButtonClear" Click="ButtonClear_Click" FontSize="25" Content="C" Grid.Row="1" Grid.Column="0"/>
-        <Button Name="ButtonSquare" Click="Button_Click" FontSize="25" Content="^2" Grid.Row="1" Grid.Column="1"/>
-        <Button Name="ButtonRoot" Click="Button_Click" FontSize="25" Content="Root" Grid.Row="1" Grid.Column="2"/>
-        <Button Name="ButtonDivison" Click="Button_Click" FontSize="25" Content="/" Grid.Row="1" Grid.Column="3"/>
+        <Button Name="ButtonSquare" Click="ButtonOp_Click" FontSize="25" Content="^2" Grid.Row="1" Grid.Column="1"/>
+        <Button Name="ButtonRoot" Click="ButtonOp_Click" FontSize="25" Content="Root" Grid.Row="1" Grid.Column="2"/>
+        <Button Name="ButtonDivison" Click="ButtonOp_Click" FontSize="25" Content="/" Grid.Row="1" Grid.Column="3"/>
         <Button Name="ButtonSeven" Click="Button_Click" FontSize="25" Content="7" Grid.Row="2" Grid.Column="0"/>
         <Button Name="ButtonEight" Click="Button_Click" FontSize="25" Content="8" Grid.Row="2" Grid.Column="1"/>
         <Button Name="ButtonNine" Click="Button_Click" FontSize="25" Content="9" Grid.Row="2" Grid.Column="2"/>
-        <Button Name="ButtonMulti" Click="Button_Click" FontSize="25" Content="X" Grid.Row="2" Grid.Column="3"/>
+        <Button Name="ButtonMulti" Click="ButtonOp_Click" FontSize="25" Content="*" Grid.Row="2" Grid.Column="3"/>
         <Button Name="ButtonFour" Click="Button_Click" FontSize="25" Content="4" Grid.Row="3" Grid.Column="0"/>
         <Button Name="ButtonFive" Click="Button_Click" FontSize="25" Content="5" Grid.Row="3" Grid.Column="1"/>
         <Button Name="ButtonSix" Click="Button_Click" FontSize="25" Content="6" Grid.Row="3" Grid.Column="2"/>
-        <Button Name="ButtonSub" Click="Button_Click" FontSize="25" Content="-" Grid.Row="3" Grid.Column="3"/>
+        <Button Name="ButtonSub" Click="ButtonOp_Click" FontSize="25" Content="-" Grid.Row="3" Grid.Column="3"/>
         <Button Name="ButtonOne" Click="Button_Click" FontSize="25" Content="1" Grid.Row="4" Grid.Column="0"/>
         <Button Name="ButtonTwo" Click="Button_Click" FontSize="25" Content="2" Grid.Row="4" Grid.Column="1"/>
         <Button Name="ButtonThree" Click="Button_Click" FontSize="25" Content="3" Grid.Row="4" Grid.Column="2"/>
-        <Button Name="ButtonAdd" Click="Button_Click" FontSize="25" Content="+" Grid.Row="4" Grid.Column="3"/>
-        <Button Name="ButtonDel" Click="Button_Click" FontSize="25" Content="Del" Grid.Row="5" Grid.Column="0"/>
+        <Button Name="ButtonAdd" Click="ButtonOp_Click" FontSize="25" Content="+" Grid.Row="4" Grid.Column="3"/>
+        <Button Name="ButtonDel" Click="ButtonDel_Click" FontSize="25" Content="Del" Grid.Row="5" Grid.Column="0"/>
         <Button Name="ButtonZero" Click="Button_Click" FontSize="25" Content="0" Grid.Row="5" Grid.Column="1"/>
-        <Button Name="ButtonComma" Click="Button_Click" FontSize="25" Content="." Grid.Row="5" Grid.Column="2"/>
-        <Button Name="ButtonCalc" Click="Button_Click" FontSize="25" Content="=" Grid.Row="5" Grid.Column="3"/>
+        <Button Name="ButtonComma" Click="Button_Click" FontSize="25" Content="," Grid.Row="5" Grid.Column="2"/>
+        <Button Name="ButtonCalc" Click="ButtonCalc_Click" FontSize="25" Content="=" Grid.Row="5" Grid.Column="3"/>
 
     </Grid>
 </Window>
