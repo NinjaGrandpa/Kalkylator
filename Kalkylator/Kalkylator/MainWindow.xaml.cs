@@ -34,6 +34,16 @@ namespace Kalkylator
             symbolCount = 0;
         }
 
+        private void ButtonSquare_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void ButtonRoot_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
@@ -59,11 +69,21 @@ namespace Kalkylator
 
         private void ButtonCalc_Click(object sender, RoutedEventArgs e)
         {
-            String[] numbers = NumpadText.Text.Split('+', '-', '*', '/');
+            String[] numbers = NumpadText.Text.Split('+', '-', '*', '/','^', '√');
 
             var number1 = Convert.ToDouble(numbers[0]);
             var number2 = Convert.ToDouble(numbers[1]);
             var answer = 0.00;
+
+            if (NumpadText.Text.Contains("^"))
+            {
+
+            }
+
+            if (NumpadText.Text.Contains("√"))
+            {
+
+            }
 
             if (NumpadText.Text.Contains('+'))
             {
@@ -84,6 +104,7 @@ namespace Kalkylator
             {
                 answer = number1 / number2;
             }
+
 
             NumpadText.Text = Convert.ToString(answer);
 
