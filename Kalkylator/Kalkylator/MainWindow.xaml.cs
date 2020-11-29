@@ -65,9 +65,9 @@ namespace Kalkylator
         {
             String[] numbers = NumpadText.Text.Split('+', '-', '*', '/', '^', '√');
 
-            char[] opArray = { '+', '-', '*', '/', '^', '√' };
-            char[] textArray = NumpadText.Text.ToCharArray();
-
+           // char[] opArray = { '+', '-', '*', '/', '^', '√' };
+           // char[] textArray = NumpadText.Text.ToCharArray();
+           //
            // for (int i = 0; i < opArray.Length; i++)
            // {
            //     if (textArray[0] == opArray[])
@@ -78,13 +78,10 @@ namespace Kalkylator
            //
            //if (textArray[0] == )
            //{
-
-
-
+                
                 var answer = 0.00;
                 var number1 = Convert.ToDouble(numbers[0]);
                 var number2 = Convert.ToDouble(numbers[1]);
-
 
                 if (NumpadText.Text.Contains('+'))
                 {
